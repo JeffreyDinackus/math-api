@@ -3,22 +3,22 @@ from sympy import *
 
 app = Flask(__name__)
 
-function_dict = {
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": "",
-    "6": "",
-    "7": "",
-    "8": "",
-    "9": "",
-    "10": "",
-    "11": "",
-    "12": "",
-    "13": "",
-    "14": "",
-    "15": ""
+operations_dict = {
+    "simplify": "",
+    "factor": "",
+    "derive": "",
+    "integrate": "",
+    "zeroes": "",
+    "tangent": "",
+    "area": "",
+    "cos": "",
+    "sin": "",
+    "tan": "",
+    "arccos": "",
+    "arcsin": "",
+    "arctan": "",
+    "abs": "",
+    "log": ""
 }
 
 
