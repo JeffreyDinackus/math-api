@@ -4,21 +4,21 @@ from sympy import *
 app = Flask(__name__)
 
 operations_dict = {
-    "simplify": "",
+    "simplify": "simplify(eval(answer))",
     "factor": "factor(eval(answer))",
-    "derive": "",
-    "integrate": "",
+    "derive": "diff(eval(answer))",
+    "integrate": "integrate(eval(answer))",
     "zeroes": "",
     "tangent": "",
     "area": "",
-    "cos": "",
-    "sin": "",
-    "tan": "",
-    "arccos": "",
-    "arcsin": "",
-    "arctan": "",
-    "abs": "",
-    "log": ""
+    "cos": "cos(eval(answer))",
+    "sin": "sin(eval(answer))",
+    "tan": "tan(eval(answer))",
+    "arccos": "acos(eval(answer))",
+    "arcsin": "asin(eval(answer))",
+    "arctan": "atan(eval(answer))",
+    "abs": "abs(eval(answer))",
+    "log": "log(eval(answer))"
 }
 
 
@@ -32,6 +32,9 @@ def hello(function=None, equation=None):
     #data normalization
     answer= ""
     prev =""
+    if equation == "pi":
+        equation = 3.14
+
     for i in equation:
 
         if i.isalpha() and prev.isdigit():
