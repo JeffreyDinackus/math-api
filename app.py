@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 operations_dict = {
     "simplify": "",
-    "factor": "",
+    "factor": "factor(eval(answer))",
     "derive": "",
     "integrate": "",
     "zeroes": "",
@@ -47,20 +47,20 @@ def hello(function=None, equation=None):
     #implement hashmap for functions
     if function != None and equation != None :
         
-        if function == "factor":
-            result = factor(eval(answer))
+        
+        result = eval(operations_dict[function])
         
 
-    prev = ""
-    output = ""
-    for i in str(result):
-        if i == "*" and prev == "*":
-            output+="^"
-        if i.isalpha() and prev.isdigit():
-            
+    # prev = ""
+    # output = ""
+    # for i in str(result):
+    #     if i == "*" and prev == "*":
+    #         output+="^"
+    #     if i.isalpha() and prev.isdigit():
+    #         pass
 
 
-        prev = i
+    #     prev = i
         
     else: 
         return { "request incomplete": "correct and resend", "format": "url/function/equation", "example" : "http://127.0.0.1:5000/factor/x^2-1", "status_code" : 500}
