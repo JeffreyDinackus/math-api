@@ -1,6 +1,7 @@
 from flask import Flask, request
 from sympy import *
 
+
 app = Flask(__name__)
 
 operations_dict = {
@@ -32,24 +33,24 @@ def hello(function=None, equation=None):
     #data normalization
     answer= ""
     prev =""
-    if equation == "pi":
-        equation = 3.14
+    
 
     for i in equation:
-
+        
         if i.isalpha() and prev.isdigit():
             answer+="*"+i
         elif i == "^":
             answer+="**"
+        elif prev.isalpha() and i.isdigit():
+            answer += "*"+i
         else:
             answer+=i
         prev = i
    
-
+    
 
     #implement hashmap for functions
     if function != None and equation != None :
-        
         
         result = eval(operations_dict[function])
         
