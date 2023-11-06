@@ -26,6 +26,19 @@ example:
 public ip example
 30.145.23.1/factor/3y+2x
 
+Functions supported:
+simplify 
+factor 
+derive 
+integrate 
+cos 
+sin 
+tan 
+arccos 
+arcsin 
+arctan 
+abs 
+log 
 
 you now have a server you can make get requests to and received JSON of the answer in return. 
 
