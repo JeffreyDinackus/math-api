@@ -27,10 +27,11 @@ python app.py
 
 
 
-send get requests in this format:
+# send get requests in this format:
 
-yourURLorIp.com/equation/symbols_used <br>
-example: 
+> yourURLorIp.com/function/equation <br>
+
+### example: 
 
 > 127.0.0.1/function/equation <br>
 
