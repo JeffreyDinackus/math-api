@@ -37,7 +37,7 @@ python app.py
 
 > 127.0.0.1/factor/3y+2x <br>
 
-> public ip example <br>
+### public ip example <br>
 
 > 30.145.23.1/factor/3y+2x <br>
 
