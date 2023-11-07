@@ -16,6 +16,8 @@ install flask and sympy
 
 python app.py
 
+<hr>
+
 send get requests in this format:
 
 yourURLorIp.com/equation/symbols_used <br>
