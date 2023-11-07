@@ -40,7 +40,8 @@ example:
 
 > 30.145.23.1/factor/3y+2x <br>
 
-Functions supported:
+# Functions supported:
+
 - simplify <br>
 - factor  <br>
 - derive  <br>
@@ -57,6 +58,6 @@ Functions supported:
 you now have a server you can make get requests to and received JSON of the answer in return. 
 
 
-Example response:
+# Example response:
 
 "status_code" : 200,"input" : "x^2 - 1", "result" : "(x - 1) (x + 1)", "function" : "factor"
